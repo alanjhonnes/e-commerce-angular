@@ -1,0 +1,24 @@
+type Mutation {
+  createUser(data: CreateUserInput!): User!
+  updateUser(data: UpdateUserInput!): User!
+  deleteUser(id: ID!): Boolean!
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  cpf: String!
+  phone: String!
+  level: Int!
+  hasActive: Boolean!
+}
+
+input UpdateUserInput {
+  id: ID!
+  name: String!
+  email: String!
+  cpf: String!
+  phone: String!
+  level: Int!
+  hasActive: Boolean!
+}

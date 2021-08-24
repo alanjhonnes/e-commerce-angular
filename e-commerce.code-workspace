@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "backend"
+		},
+		{
+			"path": "frontend"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"cSpell.words": [
+			"codegen"
+		]
+	}
+}

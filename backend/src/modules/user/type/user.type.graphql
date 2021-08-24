@@ -1,0 +1,11 @@
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  cpf: String!
+  phone: String!
+  level: Int!
+  hasActive: Boolean!
+  createdAt: String
+  updatedAt: String
+}

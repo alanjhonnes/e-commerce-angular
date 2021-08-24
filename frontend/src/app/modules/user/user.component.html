@@ -1,0 +1,18 @@
+<app-loading *ngIf="loading; else ready"></app-loading>
+
+<ng-template #ready>
+  <app-user-item
+    *ngIf="userAll.length > 0; else empty"
+    [userAll]="userAll"
+  ></app-user-item>
+</ng-template>
+
+<ng-template #empty>
+  <p>Nenhum Usuário cadastrado!</p>
+  <div class="button-create">
+    <app-button-create
+      [disabled]="true"
+      [routerLink]="['../create']"
+    ></app-button-create>
+  </div>
+</ng-template>

@@ -1,0 +1,9 @@
+type Query {
+  categoryAll: [Category!]!
+  categoryById (id: ID!): Category
+  categoryByField (fields: categoryQueryInput!): [Category!]!
+}
+
+input categoryQueryInput {
+  name: String
+}

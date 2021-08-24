@@ -1,0 +1,10 @@
+<h3>Criar Categoria</h3>
+<app-category-form></app-category-form>
+<div class="column-buttons">
+    <div class="buttons">
+        <app-button-create
+            [disabled]="categoryForm && categoryForm.categoryFormGroup.valid"
+            (click)="sendForm()"></app-button-create>
+        <app-button-cancel [routerLink]="['..']"></app-button-cancel>
+    </div>
+</div>

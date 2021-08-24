@@ -1,0 +1,14 @@
+<app-loading *ngIf="loading; else ready"></app-loading>
+
+<ng-template #ready>
+    <h3>Alterar Categoria</h3>
+    <app-category-form [categoryId]="categoryId"></app-category-form>
+    <div class="column-buttons">
+        <div class="buttons">
+            <app-button-create
+                [disabled]="categoryForm && categoryForm.categoryFormGroup.valid"
+                (click)="sendForm()"></app-button-create>
+            <app-button-cancel [routerLink]="['../..']"></app-button-cancel>
+        </div>
+    </div>
+</ng-template>

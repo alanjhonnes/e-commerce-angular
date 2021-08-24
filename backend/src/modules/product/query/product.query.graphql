@@ -1,0 +1,10 @@
+type Query {
+  productAll: [Product!]!
+  productById (id: ID!): Product
+  productByField (fields: productQueryInput!): [Product!]!
+}
+
+input productQueryInput {
+  name: String
+  price: Int
+}

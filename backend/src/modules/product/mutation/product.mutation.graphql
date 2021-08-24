@@ -1,0 +1,18 @@
+type Mutation {
+  createProduct(data: CreateProductInput!): Product!
+  updateProduct(data: UpdateProductInput!): Product!
+  deleteProduct(id: ID!): Boolean!
+}
+
+input CreateProductInput {
+  name: String!
+  price: Int!
+  categoryId: Int!
+}
+
+input UpdateProductInput {
+  id: ID!
+  name: String!
+  price: Int!
+  categoryId: Int!
+}
